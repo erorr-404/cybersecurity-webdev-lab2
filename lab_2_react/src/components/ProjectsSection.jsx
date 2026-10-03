@@ -3,6 +3,7 @@ import tankv2_1 from '../assets/tankv2_1.jpg';
 import tankv2_2 from '../assets/tankv2_2.jpg';
 import crab2_1 from '../assets/crab2_1.jpg';
 import crab2_2 from '../assets/crab2_2.jpg';
+import hackathon1 from '../assets/hackathon1.png';
 
 function ProjectsSection() {
     const imageHeight = 200;
@@ -11,6 +12,10 @@ function ProjectsSection() {
             <h3>Проєкти</h3>
             <ul>
                 <li><a href="https://github.com/erorr-404/rust-ram-fs">Емулятор файлової системи CLI в оперативній пам’яті, написаний на мові Rust</a></li>
+                <li>
+                    <a href="https://github.com/erorr-404/Larp-Team-BEST-HACKath0n">"Система аналізу телеметрії та 3D-візуалізації польотів БПЛА" для хакатону BEST-HACKath0n-2026</a>
+                    <img src={hackathon1} height={imageHeight} alt="Screenshot of 'Система аналізу телеметрії та 3D-візуалізації польотів БПЛА'"/>
+                </li>
                 <li>
                     <p>Наземний гусеничний дрон «TankV2»</p>
                     <img src={tankv2_1} height={imageHeight} alt="«TankV2»"/>
