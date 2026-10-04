@@ -3,19 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Резюме Голуба Максима</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Резюме</h1>
-    </header>
+
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+
     <main>
+        <header>
+            <h1 id="main-header" style="text-align: center;">Резюме</h1>
+        </header>
+
         <section>
             <h2>Голуб Максим</h2>
             <h3>Unity Developer / Full-Stack / Hardware & IoT інженер</h3>
             <p>Розробник з інтересом до створення ігор та роботи із мікроконтролерами. Вмію робити веб-сайти, 2D ігри та невеличкі IoT пристрої.</p>
-            <p>E-mail: <a href="mailto:maksym.holub.kb.2025@lpnu.ua">maksym.holub.kb.2025@lpnu.ua</a></p>
-            <p>GitHub: <a href="https://github.com/erorr-404">erorr-404</a></p>
+            
+            <div class="contact">
+                <p>E-mail:</p>
+                <a href="mailto:maksym.holub.kb.2025@lpnu.ua">maksym.holub.kb.2025@lpnu.ua</a>
+            </div>
+            <div class="contact">
+                <p>GitHub:</p>
+                <a href="https://github.com/erorr-404">erorr-404</a>
+            </div>
         </section>
         <section>
             <h3>Технічні навички</h3>
@@ -29,26 +48,64 @@
         <section>
             <h3>Проєкти</h3>
             <ul>
-                <li><a href="https://github.com/erorr-404/rust-ram-fs">Емулятор файлової системи CLI в оперативній пам’яті, написаний на мові Rust</a></li>
-                <li>
-                    <a href="https://github.com/erorr-404/Larp-Team-BEST-HACKath0n">"Система аналізу телеметрії та 3D-візуалізації польотів БПЛА" для хакатону BEST-HACKath0n-2026</a>
+                <li class="projects-list-item">
+                    <p>Емулятор файлової системи CLI в оперативній пам’яті, написаний на мові Rust</p>
+                    <div class="links-container">
+                        <a class="github-link" href="https://github.com/erorr-404/rust-ram-fs">GitHub</a></li>
+                    </div>
+                <li class="projects-list-item" >
+                    <p>"Система аналізу телеметрії та 3D-візуалізації польотів БПЛА" для хакатону BEST-HACKath0n-2026</a>
                     <br>
-                    <img src="assets/hackathon1.png" height="200" alt="Screenshot of 'Система аналізу телеметрії та 3D-візуалізації польотів БПЛА'">
+                    <div class="image-container">
+                        <img src="assets/hackathon1.png" alt="Screenshot of 'Система аналізу телеметрії та 3D-візуалізації польотів БПЛА'">
+                    </div>
+                    <div class="links-container">
+                        <a class="github-link" href="https://github.com/erorr-404/Larp-Team-BEST-HACKath0n">GitHub</a>
+                    </div>
                 </li>
-                <li>
+                <li class="projects-list-item" >
                     <p>Наземний гусеничний дрон «TankV2»</p>
-                    <img src="assets/tankv2_1.jpg" height="500" alt="«TankV2»"/>
-                    <img src="assets/tankv2_2.jpg" height="500" alt="«TankV2»"/>
+                    <div class="image-container">
+                        <img src="assets/tankv2_1.jpg" alt="«TankV2»"/>
+                        <img src="assets/tankv2_2.jpg" alt="«TankV2»"/>
+                    </div>
                 </li>
-                <li>
+                <li class="projects-list-item" >
                     <p>Наземний дрон з камерою «Crab-2»</p>
-                    <img src="assets/crab2_1.jpg" height="500" alt="«Crab-2»"/>
-                    <img src="assets/crab2_2.jpg" height="500" alt="«Crab-2»"/>
+                    <div class="image-container">
+                        <img src="assets/crab2_1.jpg" alt="«Crab-2»"/>
+                        <img src="assets/crab2_2.jpg" alt="«Crab-2»"/>
+                    </div>
                 </li>
-                <li>Телеграм-бот для віддаленого друку</li>
-                <li><a href="https://github.com/erorr-404/SmartTelegramBot">Телеграм-бот, який використовує Ollama для спілкування з користувачами у Telegram.</a></li>
-                <li><a href="https://erorr-404.github.io/timetable">Веб-сайт</a> для перегляду розкладу уроків (<a href="https://github.com/erorr-404/timetable">Репозиторій</a>)</li>  
-                <li><a href="https://erorr-404.github.io/rada-presentation/">Сайт</a> ради президента ліцею №4 м. Вінниця (<a href="https://github.com/erorr-404/rada-presentation">Репозиторій</a>)</li>
+                <li class="projects-list-item" >
+                    <p>Телеграм-бот, який використовує Ollama для спілкування з користувачами у Telegram.</a>
+                    <div class="links-container">
+                        <a class="github-link" href="https://github.com/erorr-404/SmartTelegramBot">GitHub</a>
+                    </div>
+                </li>
+                <li class="projects-list-item" >
+                    <p >Веб-сайт для перегляду розкладу уроків </p>
+                    <div class="image-container">
+                        <img src="assets/timetable_3.png" alt="Timetable website">
+                        <img src="assets/timetable_1.png" alt="Timetable website 2">
+                        <img src="assets/timetable_2.png" alt="Timetable website 3">
+                    </div>
+                    <div class="links-container">
+                        <a href="https://erorr-404.github.io/timetable">Веб-сайт</a>
+                        <a class="github-link" href="https://github.com/erorr-404/timetable">GitHub</a>
+                    </div>
+                </li>  
+                <li class="projects-list-item" >
+                    <p>Сайт ради президента ліцею №4 м. Вінниця </p>
+                    <div class="image-container">
+                        <img src="assets/rada_1.png" alt="Website of rada">
+                        <img src="assets/rada_2.png" alt="Website of rada 2">
+                    </div>
+                    <div class="links-container">
+                        <a href="https://erorr-404.github.io/rada-presentation/">Веб-сайт</a>
+                        <a class="github-link" href="https://github.com/erorr-404/rada-presentation">GitHub</a>
+                    </div>
+                </li>
             </ul>
         </section>
         <section>
