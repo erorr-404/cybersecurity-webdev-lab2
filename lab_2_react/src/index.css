@@ -1,6 +1,58 @@
 @import "tailwindcss";
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+@custom-variant light (&:where(.light, .light *));
+
+@theme {
+  --color-page: #111d3d;
+  --color-panel: #19284f;
+  --color-card: #1d315d;
+  --color-border: #304875;
+  --color-divider: #45628f;
+  --color-line: #5677a8;
+  --color-border-hover: #4f6a90;
+  --color-control: #294477;
+  --color-control-border: #5575a8;
+  --color-control-hover: #35568a;
+  --color-control-text: #d5e1f5;
+  --color-accent: #d3a45f;
+  --color-muted: #82a0d1;
+  --color-eyebrow: #8da8d0;
+  --color-deep-shadow: #08112b;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-body: #e2e8f0;
+  --color-secondary: #cbd5e1;
+  --color-on-accent: #ffffff;
+}
+
+.light {
+  --color-page: #f4f7fb;
+  --color-panel: #ffffff;
+  --color-card: #eef3fa;
+  --color-border: #c7d3e6;
+  --color-divider: #b6c5dc;
+  --color-line: #8ea5c7;
+  --color-border-hover: #6d86ad;
+  --color-control: #edf2f8;
+  --color-control-border: #9db0cc;
+  --color-control-hover: #dfe8f4;
+  --color-control-text: #23324a;
+  --color-accent: #dd6b20;
+  --color-muted: #536987;
+  --color-eyebrow: #647b9d;
+  --color-deep-shadow: #94a3b8;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-body: #1e293b;
+  --color-secondary: #475569;
+  --color-on-accent: #ffffff;
 }

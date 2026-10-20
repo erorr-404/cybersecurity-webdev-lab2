@@ -1,11 +1,11 @@
-import SkillSectionCell from "./SkillSectionCell";
+import SkillSectionCell from "../SkillSectionCell";
+import { Heading3 } from "../Headings";
+import { Section } from "../Section";
 
 function SkillsSection() {
   return (
-    <section className="mb-12 border-t border-[#304875] pt-8">
-      <h3 className="mb-5 text-2xl font-bold text-[#d3a45f]">
-        Технічні навички
-      </h3>
+    <Section>
+      <Heading3>Технічні навички</Heading3>
       <ul className="grid gap-3 sm:grid-cols-2">
         <SkillSectionCell
           header="Мови"
@@ -21,7 +21,7 @@ function SkillsSection() {
         />
         <SkillSectionCell header="Інше" skills={["Linux"]} />
       </ul>
-    </section>
+    </Section>
   );
 }
 

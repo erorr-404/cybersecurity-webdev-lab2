@@ -1,19 +1,21 @@
-import tankv2_1 from "../assets/tankv2_1.jpg";
-import tankv2_2 from "../assets/tankv2_2.jpg";
-import crab2_1 from "../assets/crab2_1.jpg";
-import crab2_2 from "../assets/crab2_2.jpg";
-import hackathon1 from "../assets/hackathon1.png";
-import rada_1 from "../assets/rada_1.png";
-import rada_2 from "../assets/rada_2.png";
-import timetable_1 from "../assets/timetable_1.png";
-import timetable_2 from "../assets/timetable_2.png";
-import timetable_3 from "../assets/timetable_3.png";
-import ProjectsSectionCell from "./ProjectsSectionCell";
+import tankv2_1 from "../../assets/tankv2_1.jpg";
+import tankv2_2 from "../../assets/tankv2_2.jpg";
+import crab2_1 from "../../assets/crab2_1.jpg";
+import crab2_2 from "../../assets/crab2_2.jpg";
+import hackathon1 from "../../assets/hackathon1.png";
+import rada_1 from "../../assets/rada_1.png";
+import rada_2 from "../../assets/rada_2.png";
+import timetable_1 from "../../assets/timetable_1.png";
+import timetable_2 from "../../assets/timetable_2.png";
+import timetable_3 from "../../assets/timetable_3.png";
+import ProjectsSectionCell from "../ProjectsSectionCell";
+import { Heading3 } from "../Headings";
+import { Section } from "../Section";
 
 function ProjectsSection() {
   return (
-    <section className="mb-12 border-t border-[#304875] pt-8">
-      <h3 className="mb-5 text-2xl font-bold text-[#d3a45f]">Проєкти</h3>
+    <Section>
+      <Heading3>Проєкти</Heading3>
       <ul className="space-y-6">
         <ProjectsSectionCell
           title="Емулятор файлової системи CLI в оперативній пам’яті, написаний на мові Rust"
@@ -89,7 +91,7 @@ function ProjectsSection() {
           ]}
         />
       </ul>
-    </section>
+    </Section>
   );
 }
 
