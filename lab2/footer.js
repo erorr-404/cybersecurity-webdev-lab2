@@ -1,20 +1,15 @@
 const osInfo = document.querySelector("#os-info");
 
 function saveToLocalStorage(data) {
-  localStorage.setItem("client", JSON.stringify(data));
+  localStorage.setItem("userAgent", data);
 }
 
 function loadFromLocalStorage() {
-  return JSON.parse(localStorage.getItem("client"));
-}
-
-function clientDataToString(data) {
-  const brandsString = data.brands.map((b) => b.brand).join(", ");
-  return `Browser: ${brandsString}; OS: ${data.platform}`;
+  return localStorage.getItem("userAgent");
 }
 
 // get data
-const clientData = window.navigator.userAgentData;
+const clientData = window.navigator.userAgent;
 console.log(clientData);
 
 // save to local storage
@@ -24,4 +19,4 @@ saveToLocalStorage(clientData);
 const loadedData = loadFromLocalStorage();
 
 // insert into page
-osInfo.textContent = clientDataToString(loadedData);
+osInfo.textContent = loadedData;
